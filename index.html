@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+				<!--把这里改成你的OC名字，或者你想要的网页标题-->
+				<title>又来看我啦</title>
+				<!--这个网页的图标和页面顶部使用的“icon”图片是同一张！-->
+				<link rel="icon" type="image/x-icon" href="images/icon.png">
+					<link href="index.css" rel="stylesheet" type="text/css" media="all">
+
+						<!--页面有默认背景样式，不过你可以在这里为这个角色单独设置独特背景！-->
+						<style>
+							html {
+							/*如果渐变失效，就会显示这个背景色*/
+							background: #0F0722;
+							/*可以用这个网站轻松制作好看的渐变：
+							* https://cssgradient.io/ */
+							background: linear-gradient(180deg,rgba(15, 7, 34, 1) 0%, rgba(141, 71, 166, 1) 100%);
+							/*使用这个属性可以让背景图片在滚动时保持固定不动*/
+							background-attachment: fixed;
+							}
+							body {
+							/*我想在渐变上层叠加一张透明平铺图片，所以写在这里！*/
+							background-image: url(images/bg.png);
+							/*滚动时同样保持不动*/
+							background-attachment: fixed;
+							/*如果你的平铺图片只需要横向或纵向重复，取消注释即可（把y改成x，注意顶部会被页眉挡住）*/
+							/*background-repeat: repeat-y;*/
+							/*如果你想让图片平铺在页面底部，可以用这个*/
+							/*background-position: bottom;*/
+							}
+						</style>
+					</head>
+
+	<body>
+
+		<header>
+			<!--在这里修改页面标题和跳转链接-->
+			<a href="index.html">
+				<h1>角色人设一览</h1>
+			</a>
+		</header>
+
+		<main>
+			<!--顶部是你的OC名字-->
+			<h2 class="character-name">
+				<!--如果不需要图片，可以删掉<img>标签-->
+				<img src="images/icon.png" class="icon">目前已知的信息</h2>
+
+			<!--这是人物简介卡片，会浮动到右侧！-->
+			<aside class="bio">
+				<img src="images/portrait.png">
+
+					<table>
+						<!--把这些替换成你想要的信息-->
+						<tr>
+							<td>名称</td>
+							<td>慧光</td>
+						</tr>
+						<tr>
+							<td>性别</td>
+							<td>男</td>
+						</tr>
+						<tr>
+							<td>年龄</td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td>生日</td>
+							<td>这个待我夜观天象后再做打算</td>
+						</tr>
+						<tr>
+							<td>身高</td>
+							<td>175-？？（我哪有这么矮）</td>
+						</tr>
+						<tr>
+							<td>宠物</td>
+							<td>一只小乌龟</td>
+						</tr>
+
+					</table>
+
+				</aside>
+			<section id="info">
+				<h3 class="gold">经常说的话</h3>
+				<p class="quote">还有多久放学？</p>
+				<p>暂定文字类RPG乙女向可攻略角色之一（不过我还没想好要写什么世界观，暂定恐怖类的）</p>
+			</section>
+
+			<section id="personality">
+				<h3 class="purple">性格</h3>
+				<p>有些偏执，爱吐槽，做事十分靠谱</p>
+			</section>
+
+			<section id="relationships">
+				<h3 class="red">关系网</h3>
+				<!--我分成家人、朋友、敌人这几类，你可以改成任何适合这个角色的分类-->
+
+				<h4>家人</h4>
+				<!--使用<dl>列表，可以为每一段关系写描述文字-->
+				<dl>
+					<dt>
+						<img src="images/no-icon.png" class="icon">一位家人
+					</dt>
+					<dd>小乌龟肯定是家人，剩下的还没想好</dd>
+				</dl>
+
+				<h4>朋友</h4>
+				<dl>
+					<dt>
+						<img src="images/no-icon.png" class="icon">？位朋友
+					</dt>
+					<dd>哦哦哦他会有什么样的朋友呢，首先肯定是你其次剩余的还没想好（终于说了句人话）</dd>
+
+				</dl>
+
+				<h4>敌人</h4>
+				<dl>
+					<dt>
+						<img src="images/no-icon.png" class="icon">？名对手
+					</dt>
+					<dd>情敌1号情敌2号等等...（居然连名字都没有吗）不过还是有正儿八经的敌人吧。。。这个我也还没想好</dd>
+				</dl>
+
+			</section>
+
+			<section id="story">
+				<h3 class="blue">背景故事</h3>
+				<p>你精心构思的完整背景故事，全部放在这里！</p>
+
+				<h4>呃啊我还没想好</h4>
+				<p>如果文字很多，可以增加小标题，把大段文字分开</p>
+				<p>你也可以用折叠块做剧透隐藏</p>
+
+				<details class="spoilers">
+					<summary>剧透警告</summary>
+					<p>坐在你后桌的那个人居然是**吗，明明平时完全看不出来</p>
+					<P>(哈哈其实没有什么剧透，大概吧)</P>
+
+				</details>
+
+			</section>
+
+			<section id="trivia">
+				<h3 class="green">脑洞堆积处</h3>
+				<ul>
+					<li>角色小知识</li>
+					<li>暂无</li>
+				</ul>
+			</section>
+
+			<section id="gallery">
+				<h3 class="orange">人设图</h3>
+
+
+				<!--标签页教程-->
+				<!--https://css-tricks.com/pure-css-tabs-with-details-grid-and-subgrid/-->
+
+				<!--在这里修改图库总页数-->
+				<div class="gallery-grid" style="--pages:1;">
+
+					<!--每一页图库都放在<details>标签内-->
+					<details class="gallery-page" name="g-page" style="--n:1;" open="">
+						<!--第一页末尾要写 open，默认打开-->
+
+						<!--页面名称写在这里-->
+						<summary>第1页</summary>
+
+						<!--简单图库示例！-->
+						<div class="img-gallery">
+
+							<!--我用<figure>包裹图片链接，方便给图片添加图注-->
+								<figure>
+									<img src="images/concept.png" loading="lazy">
+										<figcaption>全身图（扣扣人版本）</figcaption>
+									</figure>
+							</a>
+						</div>
+					</details>
+
+				</div>
+
+				<!--图片图库到此结束-->
+			</section>
+
+			<section>
+				<h3 class="pink">感谢模板orz</h3>
+				<ul>
+					<li>
+						<a href="#">在这里放你的链接</a>
+					</li>
+
+					<!--这行链接可以删掉-->
+					<li>
+						页面模板来自 <a href="https://nomnomnami.com/" target="_blank">NomnomNami</a>
+					</li>
+				</ul>
+			</section>
+
+			<!--一个模拟评论区，你可以随便写内容！-->
+			<section id="comments">
+				<h2>评论区</h2>
+
+				<article class="comment">
+					<div class="user">
+						<img src="images/no-icon.png" class="icon">
+							example-san<small>(+5)</small>
+					</div>
+					<p>单条评论（附带点赞数！）</p>
+				</article>
+
+				<!--我会在这里写角色之间互相对话的留言哈哈-->
+				<article class="comment">
+					<div class="user">
+						<img src="images/no-icon.png" class="icon">评论者
+					</div>
+					<p>评论区的第一条。</p>
+
+					<details class="reply">
+						<summary>查看回复 (2)</summary>
+
+						<article class="comment">
+							<div class="user">
+								<img src="images/no-icon.png" class="icon">回复人
+							</div>
+							<p>我来回复啦！</p>
+						</article>
+						<article class="comment">
+							<div class="user">
+								<img src="images/no-icon.png" class="icon">评论者
+							</div>
+							<p>别回了。</p>
+						</article>
+
+					</details>
+				</article>
+
+				<article class="comment">
+					<em>“哎呀——居然都看到这了吗，不过说实在的，我的人设也太干净吧。。。”（看不下去于是一把抢过凉白开的键盘开始猛猛敲字）</em>
+				</article>
+
+			</section>
+
+			<hr>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">[等我完善好就来见你哦——]</a>
+						</li>
+						<li>
+							<a href="#">QwQ</a>
+						</li>
+					</ul>
+				</nav>
+
+			</main>
+		<footer>© 2026 [青柠凉白开]</footer>
+
+	</body>
+</html>
